@@ -1,5 +1,5 @@
 const price = 10000;
-const payment = 12000;
+const payment = 1000;
 
 // 1. kalau uangnya pas
 if(price === payment){
@@ -8,5 +8,8 @@ if(price === payment){
     const change = payment - price;
     console.log(`uang mu ada kembalianya ${change}`);
 } else { //ketika uangnya kurang
-    console.log("uang mu kurang");
+
+    const deficit = price - payment;
+    
+    console.log(`maff Uang Mu kurang ${deficit}`);
 }
